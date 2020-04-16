@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    editTextFreq = (EditText) findViewById(R.id.editTextFreq);
-    editTextDuration = (EditText) findViewById(R.id.editTextDuration);
-    SeekBar seekBarFreq = (SeekBar) findViewById(R.id.seekBarFreq);
+    editTextFreq = findViewById(R.id.editTextFreq);
+    editTextDuration = findViewById(R.id.editTextDuration);
+    SeekBar seekBarFreq = findViewById(R.id.seekBarFreq);
 
     seekBarFreq.setMax(22000);
 
-    SeekBar seekBarDuration = (SeekBar) findViewById(R.id.seekBarDuration);
+    SeekBar seekBarDuration = findViewById(R.id.seekBarDuration);
     seekBarDuration.setMax(60);
 
-    myFab = (FloatingActionButton) findViewById(R.id.myFAB);
+    myFab = findViewById(R.id.myFAB);
     myFab.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         handleTonePlay();
